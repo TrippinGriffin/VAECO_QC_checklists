@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form Web App</title>
+    <style>
+        .checklistItem {
+            text-align: left;
+        }
+
+        .ID {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="container" method="POST"
+        action="https://script.google.com/macros/s/AKfycbzWnQxsGo4aWDGiyzjy-TJqwU2mBZYP4UU43Xb0mQ3rIQ-QNniYzItqkR7a4sxC90ngHQ/exec">
+
+        <ul class="ID">
+            <li>
+                <input name="Aircraft" type="text" placeholder="Aircraft Registration" required><br>
+            </li>
+            <li>
+                <input name="Inspector" type="text" placeholder="Inspector" required><br>
+            </li>
+        </ul>
+
+        <ol class="checklistItem">
+            <li>
+                <span>
+                    Đánh giá Customer Survey form (VAECO form 6024) từ BPD và gửi phản hồi lại cho BPD. <br>
+                    <em>Note: không áp dụng đối với khách hàng VNA.</em><br>
+                    <strong>SOP 5.1.4.2</strong><br>
+                </span>
+
+                <input type="radio" name="Item_1" id="findingsYes" value="NC" required>
+                <label for="findingsYes">NC</label>
+                <input type="radio" name="Item_1" id="findingsNo" value="NIL">
+                <label for="findingsNo">NIL</label>
+                <input type="radio" name="Item_1" id="N/A" value="NIL">
+                <label for="findingsNo">N/A</label><br>
+
+                <input type="text" name="Item_1_remark" placeholder="Remark"><br>
+            </li>
+
+            <li>
+                <span>
+                    Đánh giá nội dung WP có nằm ngoài năng định của VAECO hay không? <br>
+                    <!--<em>Note: không áp dụng đối với khách hàng VNA.</em><br>-->
+                    <strong>SOP 5.3.4.2</strong><br>
+                </span>
+
+                <input type="radio" name="Item_2" id="findingsYes" value="NC" required>
+                <label for="findingsYes">NC</label>
+                <input type="radio" name="Item_2" id="findingsNo" value="NIL">
+                <label for="findingsNo">NIL</label>
+                <input type="radio" name="Item_2" id="N/A" value="NIL">
+                <label for="findingsNo">N/A</label><br>
+
+                <input type="text" name="Item_2_remark" placeholder="Remark"><br>
+            </li>
+
+            <li>
+                <span>
+                    Review và đánh giá file preload, flowchart của HBMC trên CLSX, ghi những vấn đề cần lưu ý vào mục
+                    Preinput meeting trong file Check follow up. <br>
+                    <!--<em>Note: không áp dụng đối với khách hàng VNA.</em><br>-->
+                    <ul>
+                        <li>Preload vật tư có vướng mắc gì không?</li>
+                        <li>Preload tool có vướng mắc gì không?</li>
+                        <li>Flowchart có vướng mắc gì không?</li>
+
+                    </ul>
+                    <strong>SOP 5.3.4.3</strong><br>
+                </span>
+
+                <input type="radio" name="Item_3" id="findingsYes" value="NC" required>
+                <label for="findingsYes">NC</label>
+                <input type="radio" name="Item_3" id="findingsNo" value="NIL">
+                <label for="findingsNo">NIL</label>
+                <input type="radio" name="Item_3" id="N/A" value="NIL">
+                <label for="findingsNo">N/A</label><br>
+
+                <input type="text" name="Item_3_remark" placeholder="Remark"><br>
+            </li>
+        </ol>
+
+
+
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>
